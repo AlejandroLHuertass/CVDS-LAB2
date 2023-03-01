@@ -23,6 +23,8 @@ $ cd Patterns
 Para ver elconjunto de archivos y directorios creados por el comando mvn ejecute el comando tree.
 $ tree
 
+![imagen1](img/imagen (1).png)
+
 imagen arbol 
 
 ### AJUSTAR ALGUNAS CONFIGURACIONES ENEL PROYECTO
