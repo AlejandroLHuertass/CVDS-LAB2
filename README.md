@@ -23,7 +23,7 @@ $ cd Patterns
 Para ver elconjunto de archivos y directorios creados por el comando mvn ejecute el comando tree.
 $ tree
 
-![imagen1](img/imagen (1).png)
+[![imagen1](img/imagen (1).png)](https://github.com/AlejandroLHuertass/CVDS-LAB2/blob/d88fd0495a98ed788573df226557ba82df743037/img/imagen%20(1).png)
 
 imagen arbol 
 
