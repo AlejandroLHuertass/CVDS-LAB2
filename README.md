@@ -25,6 +25,10 @@ $ tree
 
 ![imagen1](https://github.com/AlejandroLHuertass/CVDS-LAB2/blob/d88fd0495a98ed788573df226557ba82df743037/img/imagen%20(1).png)
 
+con tree /f
+
+![imagen1](https://github.com/AlejandroLHuertass/CVDS-LAB2/blob/d88fd0495a98ed788573df226557ba82df743037/img/imagen%20(2).png)
+
 imagen arbol 
 
 ### AJUSTAR ALGUNAS CONFIGURACIONES ENEL PROYECTO
@@ -35,7 +39,9 @@ Hay que cambiar la versión del compilador de Java a la versión 8, para ello, a
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
-    
+
+![imagen1](https://github.com/AlejandroLHuertass/CVDS-LAB2/blob/d88fd0495a98ed788573df226557ba82df743037/img/imagen%20(3).png)
+
 ### COMPILAR Y EJECUTAR
 
 Para compilar ejecute el comando:
@@ -44,14 +50,23 @@ $ mvn package
 Busque cuál es el objetivo del parámetro "package" y qué otros parámetros se podrían enviar al comando mvn.
 Busque cómo ejecutar desde línea de comandos, un proyecto maven y verifique la salida cuando se ejecuta con la clase App.java como parámetro en "mainClass". Tip: https://www.mojohaus.org/exec-maven-plugin/usage.html
 
-imagen
+![imagen1](https://github.com/AlejandroLHuertass/CVDS-LAB2/blob/d88fd0495a98ed788573df226557ba82df743037/img/imagen%20(4).png)
 
 Realice el cambio en la clase App.java para crear un saludo personalizado, basado en los parámetros de entrada a la aplicación. Utilizar la primera posición del parámetro que llega al método "main" para realizar el saludo personalizado, en caso que no sea posible, se debe mantener el saludo como se
 encuentra actualmente:
 
+![imagen1](https://github.com/AlejandroLHuertass/CVDS-LAB2/blob/d88fd0495a98ed788573df226557ba82df743037/img/imagen%20(5).png)
+
 Buscar cómo enviar parámetros al plugin "exec".
 Ejecutar nuevamente la clase desde línea de comandos y verificar la salida: Hello World!
 Ejecutar la clase desde línea de comandos enviando su nombre como parámetro y verificar la salida. Ej: Hello Pepito!
+
+
+
+si envio el parametro sin modifcar el codigo y solo usando el argumento:
+
+![imagen1](https://github.com/AlejandroLHuertass/CVDS-LAB2/blob/d88fd0495a98ed788573df226557ba82df743037/img/imagen%20(6).png)
+
 
 Se comprueba la longitud, si esta vacia se retorna el mensaje por defecto "Hello world!" si no, se crea una variable donde se sumarizan todas las posiciones de la cadena de caracteres y se le añade al principio un hello y al final un signo de admiración 
 
@@ -68,6 +83,9 @@ Se comprueba la longitud, si esta vacia se retorna el mensaje por defecto "Hello
             System.out.println( "Hello World!");
         }
     }
+
+![imagen1](https://github.com/AlejandroLHuertass/CVDS-LAB2/blob/d88fd0495a98ed788573df226557ba82df743037/img/imagen%20(7).png)
+ 
 ### HACER EL ESQUELETO DE LA APLICACION
 
 Creacion de paquetes:
@@ -181,10 +199,15 @@ ShapeFactory
         }
     }
 
-ejecución  
- 
+ejecución 
+
+![imagen1](https://github.com/AlejandroLHuertass/CVDS-LAB2/blob/d88fd0495a98ed788573df226557ba82df743037/img/imagen%20(8).png)
+
 Ejecute múltiples veces la clase ShapeMain, usando el plugin exec de maven con los siguientes parámetros y verifique la salida en consola para cada una:
 Sin parámetros
-Parámetro: qwerty
-Parámetro: pentagon
-Parámetro: Hexagon
+
+Parámetro: qwerty  se ejecuta pero como no es una clase existente no envia un resultado positivo, en su defecto utiliza el mensaje generico para clase no encontrada
+
+Parámetro: pentagon se ejecuta pero como no es una clase existente no envia un resultado positivo, en su defecto utiliza el mensaje generico para clase no encontrada, la clase correcta se llamaria Pentagon, con P mayuscula
+
+Parámetro: Hexagon se ejecuta y si es una clase existente, como resultado nos da el numero de lados de la figura
